@@ -1,5 +1,3 @@
-import modificadores.Pastel;
-
 /**
  * Created by Marco Calzada on 17/05/2017.
  */
@@ -7,29 +5,22 @@ public class App
 {
     public static void main(String[] args) throws InterruptedException
     {
+        System.out.println("Multithreading Java Sample");
+        multithread.Start.start();
 
-        Pastel.Sabores sabores;
+        System.out.println("Accessing members Java Sample");
+        modificadores.Start.start();
 
-        Pastel pastel = Pastel.getInstance();
-        pastel.setSabor(Pastel.Sabores.FRESA);
+        System.out.println("Optionals Java Sample");
+        optionals.Start.start();
 
-        System.out.println(Pastel.Sabores.fromValue(1).toString());
+        System.out.println("Executors Java Sample");
+        executors.Start.start();
 
-        if (pastel.getSabor().equals(Pastel.Sabores.FRESA))
-        {
+        System.out.println("Callable Java Sample");
+        callables.Start.start();
 
-        }
-        switch (pastel.getSabor())
-        {
-            case CHOCOLATE:
-                break;
-            case VAINILLA:
-                break;
-            case FRESA:
-                break;
-        }
-
-        System.out.println(pastel.getSabor().toString());
-        System.out.println(pastel.getSabor().getValue() + "");
+        System.out.println("Abstract class Java Sample");
+        abstracto.Start.start();
     }
 }
