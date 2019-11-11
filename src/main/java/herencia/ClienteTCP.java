@@ -1,6 +1,7 @@
 package herencia;
 
 import com.ks.lib.tcp.Cliente;
+import com.ks.lib.tcp.ClienteSSL;
 import com.ks.lib.tcp.EventosTCP;
 import com.ks.lib.tcp.Tcp;
 
@@ -21,6 +22,12 @@ public class ClienteTCP extends Cliente implements EventosTCP
     }
 
     @Override
+    public void conexionEstablecida(ClienteSSL clienteSSL)
+    {
+
+    }
+
+    @Override
     public void errorConexion(String s)
     {
         System.out.println("Error de conexion");
@@ -36,5 +43,11 @@ public class ClienteTCP extends Cliente implements EventosTCP
     public void cerrarConexion(Cliente cliente)
     {
         System.out.println("Conexion Cerrada");
+    }
+
+    @Override
+    public void cerrarConexion(ClienteSSL clienteSSL)
+    {
+
     }
 }

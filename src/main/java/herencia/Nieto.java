@@ -10,11 +10,11 @@ package herencia;
  * @author Marco Calzada
  */
 
-public class Nieto extends Hijo implements Humano
+public class Nieto extends Hijo
 {
     public Nieto()
     {
-        //System.out.println("Constructor herencia.Nieto");
+        System.out.println("Constructor herencia.Nieto");
     }
 
     @Override

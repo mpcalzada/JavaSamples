@@ -14,7 +14,7 @@ public class Hijo extends Padre implements Humano
 
     public Hijo()
     {
-        //System.out.println("Constructor herencia.Hijo");
+        System.out.println("Constructor herencia.Hijo");
         this.nombre = "Pepito";
         this.edad = 30;
     }

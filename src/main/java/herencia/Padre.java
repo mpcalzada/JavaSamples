@@ -17,7 +17,7 @@ public class Padre implements Humano
 
     public Padre()
     {
-        //System.out.println("Constructor herencia.Padre");
+        System.out.println("Constructor herencia.Padre");
         this.nombre = "Juan";
         this.genero = "Hombre";
     }
