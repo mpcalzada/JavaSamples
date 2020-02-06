@@ -3,7 +3,7 @@
  */
 public class App
 {
-    public static void main(String[] args) throws InterruptedException
+    public static void main(String[] args) throws Exception
     {
         //System.out.println("Multithreading Java Sample");
         //multithread.Start.start();
@@ -23,7 +23,19 @@ public class App
         //System.out.println("Abstract class Java Sample");
         //abstracto.Start.start();
 
-        System.out.println("Hierachy class Java Sample");
-        herencia.Start.start();
+        //System.out.println("Hierachy class Java Sample");
+        //herencia.Start.start();
+
+        //System.out.println("Synchronized class Java Sample");
+        //sincronizacion.Start.start();
+
+        //System.out.println("Sockets with kslib Java Sample");
+        //kslib.comunicaciones.Start.start();
+
+        //System.out.println("Sockets with kslib Java Sample");
+        //pattern.dependency_injection.Start.start();
+
+        System.out.println("Quartz interruption Java Sample");
+        quartz.Start.start();
     }
 }
